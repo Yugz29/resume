@@ -191,9 +191,11 @@ Remove to hide the download button.
 
 ```typescript
 theme: {
-  preset: 'ocean',   // 'modern' | 'ocean' | 'forest' | 'warm' | 'minimal'
+  preset: 'warm',   // 'minimal' | 'warm'
 }
 ```
+
+Each preset includes dark-mode-optimized colors, so accents stay readable in both light and dark modes.
 
 ### Custom Colors
 
@@ -201,14 +203,29 @@ Override individual colors:
 
 ```typescript
 theme: {
-  preset: 'modern',
+  preset: 'minimal',
   colors: {
+    // Background & text (light)
+    bg: '#faf6f1',
+    bgCard: '#ffffff',
+    text: '#2c1810',
+    textSecondary: '#7a6455',
+    // Background & text (dark)
+    bgDark: '#1a1410',
+    bgCardDark: '#261e17',
+    textDark: '#f5ebe0',
+    textSecondaryDark: '#b8a898',
+    // Accent (light)
     primary: '#8B5A2B',
     primaryLight: '#D4A574',
-    sidebarLight: '#f5f5f5',
-    sidebarLightEnd: '#ebebeb',
-    sidebarDark: '#2a2a2a',
-    sidebarDarkEnd: '#252525',
+    // Accent (dark)
+    primaryDark: '#D4A574',
+    primaryLightDark: '#E8C9A0',
+    // Sidebar
+    sidebarLight: '#f5f0ea',
+    sidebarLightEnd: '#ebe4db',
+    sidebarDark: '#211a14',
+    sidebarDarkEnd: '#1a1410',
   },
 }
 ```

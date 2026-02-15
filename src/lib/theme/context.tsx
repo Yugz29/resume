@@ -1,7 +1,7 @@
 import { useState, useEffect, type ReactNode } from 'react'
 import { resumeConfig } from '@/data/resume-config'
 import { presets } from '@/data/presets'
-import type { ThemeColors } from '@/data/types'
+import type { ThemeColors, PresetName } from '@/data/types'
 import { ThemeContext } from './ThemeContext'
 
 function getTimeBasedTheme(): 'light' | 'dark' {
@@ -23,16 +23,18 @@ function getInitialDark(): boolean {
   return getTimeBasedTheme() === 'dark'
 }
 
-function resolveColors(): ThemeColors {
-  const presetName = resumeConfig.theme?.preset ?? 'modern'
+function resolveColors(presetName: PresetName): ThemeColors {
   const base = presets[presetName]
   const overrides = resumeConfig.theme?.colors
   return { ...base, ...overrides }
 }
 
+const defaultPreset: PresetName = resumeConfig.theme?.preset ?? 'minimal'
+
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDark, setIsDark] = useState(getInitialDark)
-  const colors = resolveColors()
+  const [preset, setPreset] = useState<PresetName>(defaultPreset)
+  const colors = resolveColors(preset)
 
   useEffect(() => {
     const root = document.documentElement
@@ -48,7 +50,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }
 
   return (
-    <ThemeContext.Provider value={{ isDark, toggle, colors }}>
+    <ThemeContext.Provider value={{ isDark, toggle, colors, preset, setPreset }}>
       {children}
     </ThemeContext.Provider>
   )

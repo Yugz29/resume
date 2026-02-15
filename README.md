@@ -11,7 +11,7 @@ Built with React, TypeScript, Tailwind CSS, and Framer Motion.
 - **One config file** — Edit a single TypeScript file with your info
 - **Multi-language** — Built-in i18n support (add as many languages as you need)
 - **Dark / Light mode** — Auto-detects time of day, with manual toggle
-- **5 color presets** — modern, ocean, forest, warm, minimal (or fully custom)
+- **2 color presets** — minimal, warm (or fully custom)
 - **Responsive** — Mobile-first, works on all screen sizes
 - **Expandable experiences** — Click to expand details (inline on desktop, modal on mobile)
 - **Projects section** — Optional portfolio showcase
@@ -55,17 +55,14 @@ The `dist/` folder contains your static site. Deploy it anywhere. See [Deploymen
 
 | Preset | Style |
 |--------|-------|
-| `modern` | Clean slate blue-gray (default) |
-| `ocean` | Turquoise and cyan tones |
-| `forest` | Natural green tones |
+| `minimal` | Black and white with subtle accent (default) |
 | `warm` | Wood and earth tones |
-| `minimal` | Black and white with subtle accent |
 
 Set your preset in the config:
 
 ```typescript
 theme: {
-  preset: 'ocean',
+  preset: 'warm',
 }
 ```
 
@@ -94,6 +91,16 @@ src/
 │   └── hooks/                    # Custom hooks
 └── App.tsx                       # Entry point
 ```
+
+## Development with AI agents
+
+This project includes [Agentation](https://agentation.com) — a visual feedback toolbar for AI coding agents. When running in development mode (`npm run dev`), a small toolbar appears at the bottom-right of the page.
+
+It lets you click on any element, select text, or annotate parts of your resume, then copy a structured description to your clipboard. Paste it directly into your AI agent's chat to give it precise context about what you want changed.
+
+Agentation is **only active in development** and is automatically stripped from production builds.
+
+> See the [Agentation documentation](https://agentation.com) for more details.
 
 ## Contributing
 

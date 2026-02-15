@@ -83,15 +83,25 @@ export interface Hobby {
 // ===== THEME =====
 
 export interface ThemeColors {
+  bg: string
+  bgCard: string
+  text: string
+  textSecondary: string
+  bgDark: string
+  bgCardDark: string
+  textDark: string
+  textSecondaryDark: string
   primary: string
   primaryLight: string
+  primaryDark: string
+  primaryLightDark: string
   sidebarLight: string
   sidebarLightEnd: string
   sidebarDark: string
   sidebarDarkEnd: string
 }
 
-export type PresetName = 'modern' | 'ocean' | 'forest' | 'warm' | 'minimal'
+export type PresetName = 'minimal' | 'warm'
 
 // ===== LABELS =====
 

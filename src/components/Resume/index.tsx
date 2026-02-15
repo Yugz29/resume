@@ -25,9 +25,9 @@ export function Resume() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-resume-bg-card rounded-lg shadow-2xl overflow-hidden"
+        className="bg-resume-bg-card rounded-lg shadow-2xl overflow-hidden dark:border dark:border-resume-primary/10"
       >
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col-reverse md:flex-row">
           <Sidebar />
           <MainContent />
         </div>

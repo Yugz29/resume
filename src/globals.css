@@ -14,23 +14,25 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --resume-bg: #faf6f1;
+  --resume-bg: #fafaf9;
   --resume-bg-card: #ffffff;
-  --resume-text: #1f2937;
-  --resume-text-secondary: #6b7280;
-  --resume-primary: #475569;
-  --resume-primary-light: #94a3b8;
-  --resume-sidebar-from: #f1f5f9;
-  --resume-sidebar-to: #e2e8f0;
+  --resume-text: #1c1c1c;
+  --resume-text-secondary: #6b6b6b;
+  --resume-primary: #171717;
+  --resume-primary-light: #737373;
+  --resume-sidebar-from: #f4f4f4;
+  --resume-sidebar-to: #ebebeb;
 }
 
 .dark {
-  --resume-bg: #111827;
-  --resume-bg-card: #1f2937;
-  --resume-text: #f3f4f6;
-  --resume-text-secondary: #9ca3af;
-  --resume-sidebar-from: #1e293b;
-  --resume-sidebar-to: #0f172a;
+  --resume-bg: #0a0a0a;
+  --resume-bg-card: #171717;
+  --resume-text: #f0f0f0;
+  --resume-text-secondary: #a0a0a0;
+  --resume-primary: #e5e5e5;
+  --resume-primary-light: #a3a3a3;
+  --resume-sidebar-from: #0f0f0f;
+  --resume-sidebar-to: #0a0a0a;
 }
 
 body {

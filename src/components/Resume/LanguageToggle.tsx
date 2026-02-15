@@ -31,7 +31,7 @@ export function LanguageToggle() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide bg-resume-primary/10 text-resume-primary hover:bg-resume-primary/20 transition-colors cursor-pointer"
+        className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold tracking-wide bg-resume-primary/10 text-resume-primary hover:bg-resume-primary/20 transition-colors cursor-pointer"
         aria-label="Select language"
         aria-expanded={isOpen}
       >

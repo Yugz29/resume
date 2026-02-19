@@ -90,6 +90,38 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
   ],
+  projects: [
+    {
+      id: 'devnote',
+      title: { fr: 'DevNote', en: 'DevNote' },
+      description: {
+        fr: 'Application de gestion de connaissances pour développeurs. Architecture REST documentée (user stories, UML, 15+ endpoints), auth JWT, recherche multi-entités. MVP en cours.',
+        en: 'Knowledge management app for developers. Documented REST architecture (user stories, UML, 15+ endpoints), JWT auth, multi-entity search. MVP in progress.',
+      },
+      techs: ['Django', 'JavaScript', 'SQLite', 'PostgreSQL'],
+      github: 'https://github.com/Yugz29',
+    },
+    {
+      id: 'hbnb',
+      title: { fr: 'HBnB — Clone AirBnB', en: 'HBnB — AirBnB Clone' },
+      description: {
+        fr: 'Clone simplifié d\'AirBnB réalisé en 9 semaines en équipe. Back-end complet (utilisateurs, objets, stockage persistant), API RESTful et moteur de templates.',
+        en: 'Simplified AirBnB clone built over 9 weeks in a team. Full back-end (users, objects, persistent storage), RESTful API and template engine.',
+      },
+      techs: ['Python', 'Flask', 'MySQL', 'HTML5', 'CSS3'],
+      github: 'https://github.com/Yugz29',
+    },
+    {
+      id: 'low-level',
+      title: { fr: 'Projets bas niveau en C', en: 'Low-level C Projects' },
+      description: {
+        fr: 'Fonction printf et Shell simple : projets illustrant la logique système et la gestion mémoire.',
+        en: 'Printf function and simple Shell: projects illustrating system logic and memory management.',
+      },
+      techs: ['C'],
+      github: 'https://github.com/Yugz29',
+    },
+  ],
   experiences: [
     {
       id: 'chez-tonton',
@@ -166,38 +198,6 @@ export const resumeConfig: ResumeConfig = {
       degree: { fr: 'Baccalauréat professionnel', en: 'Vocational Baccalaureate' },
       specialty: { fr: 'Hôtellerie - Restauration', en: 'Hospitality & Catering' },
       period: '2011 - 2014',
-    },
-  ],
-  projects: [
-    {
-      id: 'devnote',
-      title: { fr: 'DevNote', en: 'DevNote' },
-      description: {
-        fr: 'Application de gestion de connaissances pour développeurs. Architecture REST documentée (user stories, UML, 15+ endpoints), auth JWT, recherche multi-entités. MVP en cours.',
-        en: 'Knowledge management app for developers. Documented REST architecture (user stories, UML, 15+ endpoints), JWT auth, multi-entity search. MVP in progress.',
-      },
-      techs: ['Django', 'JavaScript', 'SQLite', 'PostgreSQL'],
-      github: 'https://github.com/Yugz29',
-    },
-    {
-      id: 'hbnb',
-      title: { fr: 'HBnB — Clone AirBnB', en: 'HBnB — AirBnB Clone' },
-      description: {
-        fr: 'Clone simplifié d\'AirBnB réalisé en 9 semaines en équipe. Back-end complet (utilisateurs, objets, stockage persistant), API RESTful et moteur de templates.',
-        en: 'Simplified AirBnB clone built over 9 weeks in a team. Full back-end (users, objects, persistent storage), RESTful API and template engine.',
-      },
-      techs: ['Python', 'Flask', 'MySQL', 'HTML5', 'CSS3'],
-      github: 'https://github.com/Yugz29',
-    },
-    {
-      id: 'low-level',
-      title: { fr: 'Projets bas niveau en C', en: 'Low-level C Projects' },
-      description: {
-        fr: 'Fonction printf et Shell simple : projets illustrant la logique système et la gestion mémoire.',
-        en: 'Printf function and simple Shell: projects illustrating system logic and memory management.',
-      },
-      techs: ['C'],
-      github: 'https://github.com/Yugz29',
     },
   ],
   hobbies: [],

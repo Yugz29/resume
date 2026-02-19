@@ -117,6 +117,10 @@ export const resumeConfig: ResumeConfig = {
             'Stock and reservation management',
           ],
         },
+        env: {
+          fr: 'Gestion opérationnelle, relation client',
+          en: 'Operational management, customer relations',
+        },
       },
     },
     {
@@ -142,6 +146,10 @@ export const resumeConfig: ResumeConfig = {
           en: [
             'Team coordination and customer advisory',
           ],
+        },
+        env: {
+          fr: 'Service en restauration, travail en équipe',
+          en: 'Restaurant service, teamwork',
         },
       },
     },

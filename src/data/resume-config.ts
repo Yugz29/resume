@@ -90,111 +90,40 @@ export const resumeConfig: ResumeConfig = {
       ],
     },
   ],
-  projects: [],
-
-  experiences: [
+  projects: [
     {
       id: 'devnote',
-      company: { fr: 'Projet personnel', en: 'Personal Project' },
-      role: { fr: 'DevNote — App de gestion de connaissances', en: 'DevNote — Knowledge Management App' },
-      type: { fr: 'Projet perso', en: 'Personal project' },
-      period: { fr: '2025 - en cours', en: '2025 - ongoing' },
+      title: { fr: 'DevNote', en: 'DevNote' },
       description: {
-        fr: 'Application web de gestion de connaissances pour développeurs, conçue et développée en autonomie.',
-        en: 'Web application for developer knowledge management, designed and built independently.',
+        fr: 'Application de gestion de connaissances pour développeurs. Architecture REST documentée (user stories, UML, 15+ endpoints), auth JWT, recherche multi-entités. MVP en cours.',
+        en: 'Knowledge management app for developers. Documented REST architecture (user stories, UML, 15+ endpoints), JWT auth, multi-entity search. MVP in progress.',
       },
       techs: ['Django', 'JavaScript', 'SQLite', 'PostgreSQL'],
-      isHighlighted: true,
-      details: {
-        context: {
-          fr: 'Projet personnel initié en parallèle de la formation Holberton School.',
-          en: 'Personal project started alongside Holberton School training.',
-        },
-        tasks: {
-          fr: [
-            'Architecture REST documentée : user stories, UML, 15+ endpoints',
-            'Authentification JWT et recherche multi-entités (5 entités relationnelles)',
-            'Conception finalisée, développement MVP en cours',
-          ],
-          en: [
-            'Documented REST architecture: user stories, UML, 15+ endpoints',
-            'JWT authentication and multi-entity search (5 relational entities)',
-            'Design finalized, MVP development in progress',
-          ],
-        },
-        env: {
-          fr: 'Django REST Framework / JavaScript / SQLite / PostgreSQL',
-          en: 'Django REST Framework / JavaScript / SQLite / PostgreSQL',
-        },
-      },
+      github: 'https://github.com/Yugz29',
     },
     {
       id: 'hbnb',
-      company: { fr: 'Holberton School', en: 'Holberton School' },
-      role: { fr: 'HBnB — Clone AirBnB', en: 'HBnB — AirBnB Clone' },
-      type: { fr: 'Projet collaboratif', en: 'Team project' },
-      period: { fr: '2025', en: '2025' },
+      title: { fr: 'HBnB — Clone AirBnB', en: 'HBnB — AirBnB Clone' },
       description: {
-        fr: 'Clone simplifié d\'AirBnB réalisé en équipe en 9 semaines.',
-        en: 'Simplified AirBnB clone built as a team over 9 weeks.',
+        fr: 'Clone simplifié d\'AirBnB réalisé en 9 semaines en équipe. Back-end complet (utilisateurs, objets, stockage persistant), API RESTful et moteur de templates.',
+        en: 'Simplified AirBnB clone built over 9 weeks in a team. Full back-end (users, objects, persistent storage), RESTful API and template engine.',
       },
       techs: ['Python', 'Flask', 'MySQL', 'HTML5', 'CSS3'],
-      isHighlighted: true,
-      details: {
-        context: {
-          fr: 'Projet collaboratif en équipe, avec revues de code et travail via Git/GitHub.',
-          en: 'Team collaborative project with code reviews and Git/GitHub workflow.',
-        },
-        tasks: {
-          fr: [
-            'Conception du back-end complet : gestion des utilisateurs, objets et stockage persistant',
-            'Implémentation d\'une API RESTful et intégration d\'un moteur de templates',
-            'Travail collaboratif via Git/GitHub et revues de code',
-          ],
-          en: [
-            'Full back-end design: users, objects and persistent storage management',
-            'RESTful API implementation and template engine integration',
-            'Collaborative work via Git/GitHub and code reviews',
-          ],
-        },
-        env: {
-          fr: 'Python / OOP / Flask / MySQL / HTML / CSS',
-          en: 'Python / OOP / Flask / MySQL / HTML / CSS',
-        },
-      },
+      github: 'https://github.com/Yugz29',
     },
     {
       id: 'low-level',
-      company: { fr: 'Holberton School', en: 'Holberton School' },
-      role: { fr: 'Projets bas niveau en C', en: 'Low-level C Projects' },
-      type: { fr: 'Projet école', en: 'School project' },
-      period: { fr: '2025', en: '2025' },
+      title: { fr: 'Projets bas niveau en C', en: 'Low-level C Projects' },
       description: {
         fr: 'Fonction printf et Shell simple : projets illustrant la logique système et la gestion mémoire.',
         en: 'Printf function and simple Shell: projects illustrating system logic and memory management.',
       },
       techs: ['C'],
-      details: {
-        context: {
-          fr: 'Projets réalisés dans le cadre de la formation Holberton School.',
-          en: 'Projects completed as part of Holberton School training.',
-        },
-        tasks: {
-          fr: [
-            'Recoder la fonction printf de la librairie standard C',
-            'Implémenter un shell UNIX simplifié avec gestion des processus',
-          ],
-          en: [
-            'Recode the printf function from the C standard library',
-            'Implement a simplified UNIX shell with process management',
-          ],
-        },
-        env: {
-          fr: 'C / Gestion mémoire / Logique système',
-          en: 'C / Memory management / System logic',
-        },
-      },
+      github: 'https://github.com/Yugz29',
     },
+  ],
+
+  experiences: [
     {
       id: 'chez-tonton',
       company: { fr: 'Chez Tonton', en: 'Chez Tonton' },
@@ -278,7 +207,7 @@ export const resumeConfig: ResumeConfig = {
     sections: {
       contact: { fr: 'CONTACT', en: 'CONTACT' },
       skills: { fr: 'COMPÉTENCES', en: 'SKILLS' },
-      experience: { fr: 'PROJETS & EXPÉRIENCES', en: 'PROJECTS & EXPERIENCE' },
+      experience: { fr: 'EXPÉRIENCES PROFESSIONNELLES', en: 'WORK EXPERIENCE' },
       education: { fr: 'FORMATION', en: 'EDUCATION' },
       projects: { fr: 'PROJETS', en: 'PROJECTS' },
       hobbies: { fr: 'LOISIRS', en: 'HOBBIES' },
